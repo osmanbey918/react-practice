@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './p.css'
 export default function P() {
-        const [formArray, setformArray] =useState(['usman']);
+    const [formArray, setformArray] = useState(['usman']);
     const [form, setFormVisible] = useState(false)
     const [w, setw] = useState(window.innerWidth)
     const myform = <form>
@@ -11,9 +11,9 @@ export default function P() {
         <button onClick={() => setFormVisible(!form)} type='button'>forgot password</button>
     </form>
     console.log(w);
-    
+
     const cssClass = ['usman', 'khan', 'bey']
-    
+
     return (
 
         <div>
@@ -33,7 +33,7 @@ export default function P() {
 
             </form>
 
-            <div className={w>400?cssClass[0]:cssClass[1]}>hedjneindiunjk</div>
+            <div className={w > 400 ? cssClass[0] : cssClass[1]}>hedjneindiunjk</div>
 
         </div>
     )
