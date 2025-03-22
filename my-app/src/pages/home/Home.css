@@ -1,0 +1,33 @@
+.billBoard {
+    margin-top: 90px;
+   color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.img{
+    width: 400px;
+    height: 400px;  
+}
+.text-container{
+   
+}
+.bar{
+    height: 90px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    position: relative;
+    left: 100px;
+}
+select{
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    height: 50px;
+    margin-left: 15px;
+}

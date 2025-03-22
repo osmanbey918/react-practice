@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  color: #D6D6D6;
+  ;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-links a {
+  margin: 0 15px;
+  color: #D6D6D6;
+
+  text-decoration: none;
+}
+
+.navbar-buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #1AA090;
+  color: #D6D6D6;
+
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-buttons button:hover {
+  background-color: #777;
+}
+
+.signup {
+  background: red;
+  color: rgb(207, 52, 52);
+}

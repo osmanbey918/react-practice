@@ -12,6 +12,11 @@
     height: 600px;
     border: 2px solid red;
     flex-grow: 1;
+    position: absolute;
+    transition:  5s;
+    animation: ani 5s ease-in-out;
+
+    /* transition: left 5s, background 5s, right 5s !important ; */
 }
 
 .main {
@@ -23,6 +28,7 @@
     padding: 10px;
     border: 2px solid rgb(30, 255, 0);
     margin: auto;
+    position: relative;
 
 }
 
@@ -39,6 +45,8 @@
     border: 2px blue;
     text-align: left;
     font-size: 1.5rem;
+    transition:  5s;
+
 }
 
 input {
@@ -46,6 +54,8 @@ input {
     border: 1px solid grey;
     height: 40px;
     border-radius: 10px;
+    animation: ani 5s ease-in-out;
+
 }
 
 button:active {
@@ -54,7 +64,7 @@ button:active {
 
 .tr {
     position: relative;
-    left: 1000px;
+    /* left: 1000px; */
     background-color: green;
     transition: 3s;
 }
@@ -66,14 +76,25 @@ button:active {
     animation: ani 5s ease-in-out;
 }
 
+
 @keyframes ani {
     0% {
-        left: 900px;
-        opacity: 0;
+        transform: translateX(0);
     }
 
     100% {
-        left: 0px;
-        opacity:1;
+        transform: translateX(200px);
     }
+}
+.left {
+    left: 0;
+    background-color: red;
+    animation: ani 5s;
+}
+
+.right {
+    right: 0;
+    background-color: blue;
+    animation: ani 5s reverse;
+
 }

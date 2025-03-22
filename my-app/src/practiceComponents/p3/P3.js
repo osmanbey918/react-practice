@@ -3,18 +3,27 @@ import './p3.css'
 export default function P3() {
     const [form, setForm] = useState(true);
     const [st, setst] = useState("tr");
+    const [divp, setdivp] = useState({
+        div1: 'left',
+        div2: 'right'
+    })
     const shiftHandle = () => {
-        setForm(!form)
-        setst("kh")
+        // setForm(!form)
+        // setst("kh")
+        setdivp({
+            div1: divp.div2,
+            div2: divp.div1
+        })
     }
     const shiftHandle1 = () => {
         setst("tr")
+       
     }
 
     return (
         <div className='main'>
 
-            <div className='box'>
+            <div className={`box ${divp.div1 ==='left'?'left':'right'}`}>
                 <form>
                     <h1>Signup</h1>
                     <label htmlFor='email'>Email:</label>
@@ -24,7 +33,7 @@ export default function P3() {
                     <button type='button' onClick={shiftHandle}>clicke me</button>
                 </form>
             </div>
-            <div className={`box form ${st}`}>
+            <div className={`box form ${divp.div2 ==='left'?'left':'right'}`}>
                 <form>
                     <h1>Login</h1>
                     <label htmlFor='email'>Email:</label>
