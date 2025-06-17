@@ -1,10 +1,13 @@
 import React from 'react'
 import "./App.css"
-import Home from './pages/home/Home'
+import UseRef from './practiceComponents/UseRef'
+import UseMemo from './practiceComponents/UseMemo'
 export default function App() {
   return (
     <div>
-      <Home/>
+      {/* <Home/> */}
+      <UseRef/>
+      <UseMemo/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../assets/home.jpeg'
+// import img from '../../assets/home.jpeg'
 import Bar from '../bar/Bar'
 export default function BillBoard() {
     const hello = (text) => {
@@ -13,7 +13,7 @@ export default function BillBoard() {
                 <Bar />
             </div>
             <div className='img-container'>
-                <img src={img} alt="home" className='img' />
+                {/* <img src={img} alt="home" className='img' /> */}
             </div>
             <button type='button' hello={hello('i am good ')}></button>
         </div>
