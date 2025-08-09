@@ -3,13 +3,15 @@ import "./App.css"
 import UseRef from './practiceComponents/UseRef'
 import UseMemo from './practiceComponents/UseMemo'
 import Use from './practiceComponents/p3/Use'
+import Auth from './components/Auth'
 export default function App() {
   return (
-    <div>
+    <div className='bg-gray-900'>
       {/* <Home/> */}
-      <UseRef/>
+      {/* <UseRef/>
       <UseMemo/>
-      <Use/>
+      <Use/> */}
+      <Auth/>
     </div>
   )
 }
