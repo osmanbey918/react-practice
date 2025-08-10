@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate, useNavigation } from 'react-router-dom'
 
 export default function Auth() {
     const [form, setForm] = useState({ username:'', email:'', password:'' })
@@ -12,12 +13,13 @@ export default function Auth() {
 
     },[])
     console.log(form);
-    
+    const navigate = useNavigate();
     const handlesubmit = (e) => {
         e.preventDefault();
         console.log("your data",form);
         alert("your form has successfully submitted")
         localStorage.setItem("mydata",JSON.stringify(form));
+        navigate("/login")
     }
     return (
         <div className='container mx-auto flex justify-center min-h-[100vh]'>
