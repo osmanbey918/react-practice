@@ -24,7 +24,7 @@ export default function Auth() {
     return (
         <div className='container mx-auto flex justify-center min-h-[100vh]'>
             <form onSubmit={handlesubmit} className='flex flex-col gap-8 text-white justify-center border  text-2xl p-20'>
-                <h1 className='text-red-600 text-4xl flex flex-row mt-20 space-x-8'>Sign Up</h1>
+                <h1 className='text-blue-600 text-4xl flex flex-row mt-20 space-x-8'>Muhammad haseeb </h1>
                 <label className='' htmlFor='username'>Username</label>
                 <input name='username' label="username"
                 type='text' required onChange={handlechange("username")} className='space-x-8 shadow-lg text-gray-600 px-2 py-2 text-xl mx-2 rounded' />
