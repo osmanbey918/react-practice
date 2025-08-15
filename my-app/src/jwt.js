@@ -6,4 +6,4 @@ const token = jwt.sign({
   username: 'GFG'
 }, secretKey, { expiresIn: '1h' });
 
-console.log(token);
+console.log(token);/

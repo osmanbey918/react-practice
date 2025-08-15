@@ -17,10 +17,10 @@ export default function Auth() {
     const handlesubmit = (e) => {
         e.preventDefault();
         console.log("your data",form);
-        alert("your form has successfully submitted")
         localStorage.setItem("mydata",JSON.stringify(form));
         navigate("/login")
     }
+    //
     return (
         <div className='container mx-auto flex justify-center min-h-[100vh]'>
             <form onSubmit={handlesubmit} className='flex flex-col gap-8 text-white justify-center border  text-2xl p-20'>
